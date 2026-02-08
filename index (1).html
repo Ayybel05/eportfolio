@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayyoub BELHASSEN | Expert SISR</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Effet de particules en arrière-plan -->
+    <canvas id="particles"></canvas>
+    <div class="glow-bg"></div>
+    
+    <!-- Barre de progression du scroll -->
+    <div class="scroll-progress"></div>
+
+    <!-- Bouton retour en haut -->
+    <button class="scroll-top" id="scrollTop">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="#presentation" class="nav-link">Accueil</a>
+            <a href="#formation" class="nav-link">Parcours</a>
+            <a href="#competences" class="nav-link">Compétences</a>
+            <a href="#experience" class="nav-link">Expériences</a>
+            <a href="#projets" class="nav-link">Projets</a>
+            <a href="#certification" class="nav-link">Certifs</a>
+            <a href="#situation" class="nav-link">Situations</a>
+            <a href="#veille" class="nav-link">Veille</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="presentation" class="full-page">
+            <div class="hero">
+                <div class="badge-container">
+                    <span class="badge">BTS SIO SISR</span>
+                </div>
+                <h1>Ayyoub <span class="typed-text"></span><span class="cursor">|</span></h1>
+
+                <div class="hero-btns">
+                    <a href="#contact" class="btn-link highlight">Me contacter</a>
+                    <a href="#experience" class="btn-link">Voir mes travaux</a>
+                </div>
+
+                <div class="intro-box glass fade-in">
+                    <p class="subtitle-top">
+                        Actuellement en deuxième année de <strong>BTS SIO SISR (Solutions d'Infrastructure, Systèmes et Réseaux)</strong> au lycée Turgot à Paris, 
+                        je développe une solide base technique en administration de systèmes et réseaux.
+                    </p>
+                    
+                    <div class="action-profile">
+                        <h3>🌍 Mon moteur : L'action et le terrain</h3>
+                        <p>
+                            Je ne suis pas fait pour rester assis derrière un bureau toute la journée. Ce qui me définit, c'est mon envie de bouger et d'être au cœur de l'action. 
+                            Je poursuis l'objectif de piloter des projets d'envergure où la technique rencontre la réalité du terrain.
+                        </p>
+                    </div>
+
+                    <div class="ambitions">
+                        <h3>À terme, je vise des postes à fortes responsabilités :</h3>
+                        <ul class="target-jobs">
+                            <li>📡 Ingénieur Infrastructures Télécoms (Fibre & 5G)</li>
+                            <li>🏙️ Ingénieur Réseaux "Smart City" (Infrastructures connectées)</li>
+                            <li>🛡️ Expert en Déploiement de Sécurité (Réseaux critiques)</li>
+                        </ul>
+                    </div>
+
+                    <p class="profile-summary">
+                        🛠️ <strong>Mon profil :</strong> Issu d'un Bac général scientifique (Maths/Sciences de l'Ingénieur), j'allie rigueur d'analyse et sens pratique. 
+                        Mon parcours en SISR me permet de maîtriser l'architecture logicielle, tandis que mon tempérament me pousse vers la gestion physique et le déploiement d'infrastructures concrètes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="formation" class="full-page">
+            <h2 class="title-main">✎ Parcours Académique</h2>
+            <div class="grid">
+                <div class="card glass fade-in">
+                    <span class="date-tag">2023</span>
+                    <h3>Baccalauréat Général</h3>
+                    <p class="meta">Lycée Paul Éluard, Saint-Denis</p>
+                    <p class="desc">Spécialités Mathématiques & Sciences de l'Ingénieur.</p>
+                </div>
+                <div class="card glass fade-in">
+                    <span class="date-tag">2024 - 2026</span>
+                    <h3>BTS SIO SISR</h3>
+                    <p class="meta">Lycée Turgot, Paris</p>
+                    <p class="desc">Solutions d'Infrastructure, Systèmes et Réseaux.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="full-page">
+            <h2 class="title-main">⚙ Expertise Technique</h2>
+            
+            <div class="skills-wrapper">
+                <div class="skill-card glass fade-in">
+                    <div class="skill-header">🌐 Infrastructure & Réseaux</div>
+                    <ul>
+                        <li><strong>Déploiement :</strong> Réseaux LAN, configuration Cisco (Routeurs/Switchs)</li>
+                        <li><strong>Routage :</strong> VLANs, NAT, adressage IP, Wireshark, Nmap</li>
+                        <li><strong>Services :</strong> Configuration DHCP, DNS, SSH, FTP</li>
+                        <li><strong>Maquettes :</strong> Simulation d'architectures sous Packet Tracer</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card glass fade-in">
+                    <div class="skill-header">🖥️ Systèmes & Virtualisation</div>
+                    <ul>
+                        <li><strong>Administration :</strong> Windows Server, Debian, Ubuntu, Kali</li>
+                        <li><strong>Virtualisation :</strong> Proxmox, VMware, VirtualBox, migration VM</li>
+                        <li><strong>Conteneurisation :</strong> Déploiement de services via Docker</li>
+                        <li><strong>Automatisation :</strong> Scripting Bash (tâches système)</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card glass fade-in">
+                    <div class="skill-header">🛡️ Cybersécurité & Supervision</div>
+                    <ul>
+                        <li><strong>Sécurisation :</strong> Firewall (pfSense), droits d'accès, mises à jour</li>
+                        <li><strong>Audit :</strong> John the Ripper, Nessus, analyse de logs</li>
+                        <li><strong>Supervision :</strong> Monitoring de services (Zabbix, Nagios)</li>
+                        <li><strong>Hygiène :</strong> VeraCrypt (chiffrement), KeePass</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card glass fade-in">
+                    <div class="skill-header">📊 Gestion de Projet & Méthode</div>
+                    <ul>
+                        <li><strong>Pilotage :</strong> Diagramme de Gantt, Kanboard, suivi livrables</li>
+                        <li><strong>Documentation :</strong> Rédaction technique et veille technologique</li>
+                        <li><strong>Collaboration :</strong> Office 365, Google Workspace</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tech-stack-banner glass fade-in">
+                <span class="tech-tag">Cisco</span>
+                <span class="tech-tag">Proxmox</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">pfSense</span>
+                <span class="tech-tag">Zabbix</span>
+                <span class="tech-tag">Linux</span>
+                <span class="tech-tag">Windows Server</span>
+                <span class="tech-tag">VMware</span>
+            </div>
+        </section>
+
+        <section id="experience" class="full-page">
+            <h2 class="title-main">⚙ Expériences Pro</h2>
+            <div class="grid">
+                <div class="card glass featured fade-in">
+                    <span class="date-tag">Stage 1ère Année - 2025</span>
+                    <h3>W.G. Consulting</h3>
+                    <p class="desc">Mise en place de supervision via Zabbix, gestion de serveurs Hyper-V et déploiement de conteneurs Docker.</p>
+                    <div class="btn-group">
+                        <a href="rapport-de-stage-ayyoub-belhassen.pdf" target="_blank" class="btn-link">📄 Rapport PDF</a>
+                        <a href="docs/attestation1.pdf" target="_blank" class="btn-link">Attestation</a>
+                    </div>
+                </div>
+                <div class="card glass fade-in">
+                    <span class="date-tag">Stage 2ème Année - 2025/2026</span>
+                    <h3>Cité Maurice-Ravel</h3>
+                    <p class="desc">Administration systèmes et déploiement d'infrastructures en milieu scolaire.</p>
+                    <div class="btn-group">
+                        <a href="Rapport de Stage Ayyoub BELHASSEN.pdf" target="_blank" class="btn-link">📄 Rapport PDF</a>
+                        <a href="docs/attestation2.pdf" target="_blank" class="btn-link">Attestation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="full-page">
+            <h2 class="title-main">◆ Projets Techniques</h2>
+            <div class="card-large glass fade-in">
+                <h3>Architecture Réseau Sécurisée</h3>
+                <p class="desc">Conception d'un réseau d'entreprise avec segmentation VLAN, VPN nomade et serveurs Windows/Linux.</p>
+                <div class="btn-group">
+                    <a href="docs/cdc.pdf" target="_blank" class="btn-link">Cahier des charges</a>
+                    <a href="docs/tests.pdf" target="_blank" class="btn-link">Tests & Recettes</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="certification" class="full-page">
+            <h2 class="title-main">✔ Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card glass fade-in">
+                    <div class="cert-header">
+                        <h3>Cisco Packet Tracer</h3>
+                        <span class="cert-badge">✓ Certifié</span>
+                    </div>
+                    <p class="desc">Introduction à l'examen Packet Tracer</p>
+                    <div class="cert-preview">
+                        <embed src="introduction_to_packet_tracer.pdf" type="application/pdf" width="100%" height="400px" />
+                    </div>
+                    <a href="https://www.credly.com/badges/30469400-55e1-4318-911b-af214bd4eb90" target="_blank" class="btn-link">📄 Badge preuve</a>
+                </div>
+                
+                <div class="cert-card glass fade-in">
+                    <div class="cert-header">
+                        <h3>Cisco NetAcad</h3>
+                        <span class="cert-badge">✓ Certifié</span>
+                    </div>
+                    <p class="desc">Notions de base sur les réseaux</p>
+                    <div class="cert-preview">
+                        <embed src="certificate.pdf" type="application/pdf" width="100%" height="400px" />
+                    </div>
+                    <a href="https://www.credly.com/badges/822e7f32-5cce-4aa0-92a9-4922066ce9e4" target="_blank" class="btn-link">📄 Badge preuve</a>
+                </div>
+
+                <div class="cert-card glass fade-in">
+                    <div class="cert-header">
+                        <h3>Cisco Python</h3>
+                        <span class="cert-badge">✓ Certifié</span>
+                    </div>
+                    <p class="desc">Les essentiels de Python 2</p>
+                    <div class="cert-preview">
+                        <embed src="_certificate_python.pdf" type="application/pdf" width="100%" height="400px" />
+                    </div>
+                    <a href="https://www.credly.com/badges/8481edcb-d7f3-4cea-a238-bde763a1d77f" target="_blank" class="btn-link">📄 Badge preuve</a>
+                </div>
+                
+                <div class="cert-card glass fade-in">
+                    <div class="cert-header">
+                        <h3>PIX - Compétences Numériques</h3>
+                        <span class="cert-badge">✓ Certifié</span>
+                    </div>
+                    <p class="desc">Certification nationale</p>
+                    <div class="cert-preview">
+                        <embed src="certification-pix-20230123.pdf" type="application/pdf" width="100%" height="400px" />
+                    </div>
+                    <a href="certification-pix-20230123.pdf" target="_blank" class="btn-link">📄 Ouvrir en plein écran</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="situation" class="full-page">
+            <h2 class="title-main">♟ Situations Professionnelles</h2>
+            <div class="grid">
+                <div class="card glass fade-in">
+                    <h3>Active Directory</h3>
+                    <p class="desc">Installation et configuration du domaine Active Directory.</p>
+                    <a href="1ere sit.pdf" target="_blank" class="btn-link">Situation professionnelle 1</a>
+                </div>
+                <div class="card glass fade-in">
+                    <h3>pfSense</h3>
+                    <p class="desc">Installation de pfSense sous Proxmox pour la sécurisation réseau.</p>
+                    <a href="2eme sit.pdf" target="_blank" class="btn-link">Situation professionnelle 2</a>
+                </div>
+            </div>
+            <div class="btn-group" style="margin-top: 40px;">
+                <a href="docs/tableau-synthese.pdf" target="_blank" class="btn-link highlight">📊 Tableau de Synthèse E6</a>
+            </div>
+        </section>
+
+        <section id="veille" class="full-page">
+            <h2 class="title-main">☼ Veille Technologique</h2>
+            <p class="veille-intro">Thématique : <strong>L'IoT dans les Smart Cities</strong> - Exploration des objets connectés et de leur impact sur les infrastructures urbaines modernes.</p>
+            
+            <div class="veille-grid">
+                <article class="veille-card glass fade-in">
+                    <div class="veille-source">Orange IoT Journey</div>
+                    <h3>Les solutions IoT dans la Smart City</h3>
+                    <p class="veille-excerpt">
+                        Découvrez comment l'IoT révolutionne les villes intelligentes. Les objets connectés permettent d'optimiser la gestion urbaine, 
+                        de l'éclairage public à la gestion des déchets, en passant par le stationnement intelligent et la qualité de l'air...
+                    </p>
+                    <div class="veille-tags">
+                        <span class="tag">IoT</span>
+                        <span class="tag">Smart City</span>
+                        <span class="tag">Connectivité</span>
+                    </div>
+                    <a href="https://iotjourney.orange.com/fr-FR/explorer/les-solutions-iot/iot-dans-le-smart-city" target="_blank" class="btn-link">
+                        Lire l'article complet →
+                    </a>
+                </article>
+
+                <article class="veille-card glass fade-in">
+                    <div class="veille-source">Matooma</div>
+                    <h3>Smart City : Ces objets connectés qui nous entourent</h3>
+                    <p class="veille-excerpt">
+                        Lampadaires intelligents, capteurs de pollution, poubelles connectées... Les objets IoT sont partout dans nos villes. 
+                        Découvrez ces technologies qui améliorent notre quotidien urbain et transforment la gestion des services publics...
+                    </p>
+                    <div class="veille-tags">
+                        <span class="tag">M2M</span>
+                        <span class="tag">Capteurs</span>
+                        <span class="tag">Ville connectée</span>
+                    </div>
+                    <a href="https://www.matooma.com/fr/s-informer/actualites-iot-m2m/smart-city-quels-sont-ces-objets-connect%C3%A9s-qui-nous-entourent-au-quotidien" target="_blank" class="btn-link">
+                        Lire l'article complet →
+                    </a>
+                </article>
+
+                <article class="veille-card glass fade-in">
+                    <div class="veille-source">Application IoT</div>
+                    <h3>Fonctionnement d'une Smart City</h3>
+                    <p class="veille-excerpt">
+                        Comment fonctionne réellement une ville intelligente ? De la collecte de données via des capteurs IoT à leur analyse en temps réel, 
+                        découvrez l'infrastructure technologique qui permet d'optimiser la mobilité, l'énergie et les services urbains...
+                    </p>
+                    <div class="veille-tags">
+                        <span class="tag">Infrastructure</span>
+                        <span class="tag">Data</span>
+                        <span class="tag">Gestion urbaine</span>
+                    </div>
+                    <a href="https://www.application-iot.fr/fonctionnement-smart-city/" target="_blank" class="btn-link">
+                        Lire l'article complet →
+                    </a>
+                </article>
+
+                <article class="veille-card glass fade-in">
+                    <div class="veille-source">Application IoT</div>
+                    <h3>Villes intelligentes : Actualités technologiques</h3>
+                    <p class="veille-excerpt">
+                        Restez informé des dernières innovations IoT pour les Smart Cities. Nouvelles solutions de mobilité, 
+                        réseaux LoRaWAN, jumeaux numériques urbains... Les technologies qui façonnent les villes de demain...
+                    </p>
+                    <div class="veille-tags">
+                        <span class="tag">Innovation</span>
+                        <span class="tag">LoRaWAN</span>
+                        <span class="tag">Mobilité</span>
+                    </div>
+                    <a href="https://www.application-iot.fr/actualites-technologiques/villes-intelligentes-iot/" target="_blank" class="btn-link">
+                        Lire l'article complet →
+                    </a>
+                </article>
+
+                <article class="veille-card glass fade-in">
+                    <div class="veille-source">Diehl Metering</div>
+                    <h3>L'avenir des Smart Cities avec le Smart Metering</h3>
+                    <p class="veille-excerpt">
+                        Le comptage intelligent (Smart Metering) est au cœur de la transition énergétique urbaine. 
+                        Découvrez comment ces solutions IoT permettent une gestion optimisée de l'eau, du gaz et de l'électricité 
+                        pour des villes plus durables et efficientes...
+                    </p>
+                    <div class="veille-tags">
+                        <span class="tag">Smart Metering</span>
+                        <span class="tag">Énergie</span>
+                        <span class="tag">Durabilité</span>
+                    </div>
+                    <a href="https://www.diehl.com/metering/fr/produits-et-solutions/solutions/solutions-de-connectivite/discover-the-future-of-smart-cities-with-smart-metering/" target="_blank" class="btn-link">
+                        Lire l'article complet →
+                    </a>
+                </article>
+
+                <article class="veille-card glass fade-in">
+                    <div class="veille-source">Hostragons</div>
+                    <h3>Risques de sécurité des appareils IoT</h3>
+                    <p class="veille-excerpt">
+                        Les objets connectés présentent aussi des vulnérabilités. Attaques DDoS, piratage de données, accès non autorisés... 
+                        Explorez les enjeux de cybersécurité IoT et les bonnes pratiques pour sécuriser les infrastructures des Smart Cities...
+                    </p>
+                    <div class="veille-tags">
+                        <span class="tag">Cybersécurité</span>
+                        <span class="tag">Risques</span>
+                        <span class="tag">Protection</span>
+                    </div>
+                    <a href="https://www.hostragons.com/fr/blog/risques-de-securite-des-appareils-connectes-avec-la-securite-iot/" target="_blank" class="btn-link">
+                        Lire l'article complet →
+                    </a>
+                </article>
+            </div>
+
+            <div class="veille-footer">
+                <a href="veille_securite-des-systemes-iot-.pdf" target="_blank" class="btn-link highlight">
+                    📄 Télécharger mon dossier de veille complet (PDF)
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="full-page">
+            <h2 class="title-main">✉ Contact</h2>
+            <div class="contact-form glass fade-in">
+                <p class="contact-info">
+                    📧 ayyoubbelhassen05@gmail.com<br>
+                </p>
+                <form class="form-inputs" id="contactForm">
+                    <input type="text" id="name" placeholder="Votre nom" required>
+                    <input type="email" id="email" placeholder="Votre email" required>
+                    <textarea id="message" rows="4" placeholder="Votre message" required></textarea>
+                    <button type="submit" class="btn-link highlight">Envoyer le message</button>
+                </form>
+                <div id="formFeedback" class="form-feedback"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
