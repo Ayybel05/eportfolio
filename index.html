@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayyoub BELHASSEN | BTS SISR SISR</title>
+    <title>Ayyoub BELHASSEN | BTS SIO SISR</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
@@ -27,9 +27,10 @@
             <a href="#presentation" class="nav-link">Accueil</a>
             <a href="#formation" class="nav-link">Parcours</a>
             <a href="#competences" class="nav-link">Compétences</a>
-            <a href="#experience" class="nav-link">Expériences</a>
             <a href="#projets" class="nav-link">Projets</a>
             <a href="#certification" class="nav-link">Certifs</a>
+            <a href="#schema" class="nav-link">Schéma</a>
+            <a href="#stages" class="nav-link">Expériences</a>
             <a href="#situation" class="nav-link">Situations</a>
             <a href="#veille" class="nav-link">Veille</a>
             <a href="#contact" class="nav-link">Contact</a>
@@ -46,7 +47,7 @@
 
                 <div class="hero-btns">
                     <a href="#contact" class="btn-link highlight">Me contacter</a>
-                    <a href="#experience" class="btn-link">Voir mes travaux</a>
+                    <a href="#projets" class="btn-link">Voir mes travaux</a>
                 </div>
 
                 <div class="intro-box glass fade-in">
@@ -82,16 +83,28 @@
 
         <section id="formation" class="full-page">
             <h2 class="title-main">✎ Parcours Académique</h2>
-            <div class="grid">
-                <div class="card glass fade-in">
-                    <span class="date-tag">2023</span>
-                    <h3>Baccalauréat Général</h3>
+            <div class="timeline-container">
+                <div class="timeline-item glass fade-in">
+                    <div class="timeline-header">
+                        <span class="year">2020</span>
+                        <h3>Brevet des Collèges</h3>
+                    </div>
+                    <p class="meta">Collège Barbara, Stains</p>
+                    <p class="desc">Mention</p>
+                </div>
+                <div class="timeline-item glass fade-in">
+                    <div class="timeline-header">
+                        <span class="year">2023</span>
+                        <h3>Baccalauréat Général</h3>
+                    </div>
                     <p class="meta">Lycée Paul Éluard, Saint-Denis</p>
                     <p class="desc">Spécialités Mathématiques & Sciences de l'Ingénieur.</p>
                 </div>
-                <div class="card glass fade-in">
-                    <span class="date-tag">2024 - 2026</span>
-                    <h3>BTS SIO SISR</h3>
+                <div class="timeline-item glass fade-in">
+                    <div class="timeline-header">
+                        <span class="year">2024 - 2026</span>
+                        <h3>BTS SIO SISR</h3>
+                    </div>
                     <p class="meta">Lycée Turgot, Paris</p>
                     <p class="desc">Solutions d'Infrastructure, Systèmes et Réseaux.</p>
                 </div>
@@ -154,38 +167,91 @@
             </div>
         </section>
 
-        <section id="experience" class="full-page">
-            <h2 class="title-main">⚙ Expériences Pro</h2>
-            <div class="grid">
-                <div class="card glass featured fade-in">
-                    <span class="date-tag">Stage 1ère Année - 2025</span>
-                    <h3>W.G. Consulting</h3>
-                    <p class="desc">Mise en place de supervision via Zabbix, gestion de serveurs Hyper-V et déploiement de conteneurs Docker.</p>
+        <section id="projets" class="full-page">
+            <h2 class="title-main">◆ Projets Techniques</h2>
+            <div class="projects-grid">
+                <div class="project-card glass fade-in">
+                    <h3>🏥 Serveur de messagerie (Clinique)</h3>
+                    <p class="desc">Conception et déploiement d'un serveur de messagerie avec site web intégré pour une clinique médicale.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Mail Server</span>
+                        <span class="tech-tag">Web Interface</span>
+                        <span class="tech-tag">GLPI</span>
+                    </div>
                     <div class="btn-group">
-                        <a href="rapport-de-stage-ayyoub-belhassen.pdf" target="_blank" class="btn-link">📄 Rapport PDF</a>
-                        <a href="docs/attestation1.pdf" target="_blank" class="btn-link">Attestation</a>
+                        <a href="cahierdescharges.pdf" target="_blank" class="btn-link">📋 Cahier des charges</a>
+                        <a href="Documentation_Technique_messagerie.pdf" target="_blank" class="btn-link">📄 Documentation technique</a>
+                        <a href="PROJETS/clinique/documentationGLPI.pdf" target="_blank" class="btn-link">🔧 Documentation GLPI</a>
+                        <a href="PROJETS/clinique/journaldebord.pdf" target="_blank" class="btn-link">📝 Journal de bord</a>
+                        <a href="PROJETS/clinique/kanboard.pdf" target="_blank" class="btn-link">📊 Kanboard</a>
                     </div>
                 </div>
-                <div class="card glass fade-in">
-                    <span class="date-tag">Stage 2ème Année - 2025/2026</span>
-                    <h3>Cité Maurice-Ravel</h3>
-                    <p class="desc">Administration systèmes et déploiement d'infrastructures en milieu scolaire.</p>
+
+                <div class="project-card glass fade-in">
+                    <h3>🎮 Application "Je Devine le nombre"</h3>
+                    <p class="desc">Développement d'une application de jeu interactif avec gestion du cycle de développement.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Application</span>
+                        <span class="tech-tag">Gestion Projet</span>
+                        <span class="tech-tag">Tests</span>
+                    </div>
                     <div class="btn-group">
-                        <a href="Rapport de Stage Ayyoub BELHASSEN.pdf" target="_blank" class="btn-link">📄 Rapport PDF</a>
-                        <a href="docs/attestation2.pdf" target="_blank" class="btn-link">Attestation</a>
+                        <a href="PROJETS/je devine/cahier des charges.pdf" target="_blank" class="btn-link">📋 Cahier des charges</a>
+                        <a href="PROJETS/je devine/cahier de recette.pdf" target="_blank" class="btn-link">✅ Cahier de recette</a>
+                        <a href="PROJETS/je devine/réalisation technique.pdf" target="_blank" class="btn-link">⚙️ Réalisation technique</a>
+                        <a href="PROJETS/je devine/maquette.png" target="_blank" class="btn-link">🎨 Maquette</a>
+                        <a href="PROJETS/je devine/répartition des taches.png" target="_blank" class="btn-link">👥 Répartition des tâches</a>
+                    </div>
+                </div>
+
+                <div class="project-card glass fade-in">
+                    <h3>🏛️ Solution pour Mairie</h3>
+                    <p class="desc">Développement d'une solution numérique complète pour la gestion des services municipaux.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Solution</span>
+                        <span class="tech-tag">Méthode Agile</span>
+                        <span class="tech-tag">Sprint</span>
+                    </div>
+                    <div class="btn-group">
+                        <a href="PROJETS/mairie/Cahier des charges projet mairie.pdf" target="_blank" class="btn-link">📋 Cahier des charges</a>
+                        <a href="PROJETS/mairie/solution.pdf" target="_blank" class="btn-link">📄 Solution technique</a>
+                        <a href="PROJETS/mairie/sprint.pdf" target="_blank" class="btn-link">🔄 Gestion des sprints</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projets" class="full-page">
-            <h2 class="title-main">◆ Projets Techniques</h2>
-            <div class="card-large glass fade-in">
-                <h3>Serveur de messagerie (clinique)</h3>
-                <p class="desc">Conception d'un serveur de messagerie avec un site web.</p>
-                <div class="btn-group">
-                    <a href="cahierdescharges.pdf" target="_blank" class="btn-link">Cahier des charges</a>
-                    <a href="Documentation_Technique_messagerie.pdf" target="_blank" class="btn-link">Tests & Recettes</a>
+        <section id="realisation" class="full-page">
+            <h2 class="title-main">⚙️ Réalisation Technique</h2>
+            <div class="projects-grid">
+                <div class="project-card glass fade-in">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                        <svg width="50" height="50" viewBox="0 0 100 100">
+                            <rect x="10" y="10" width="80" height="80" rx="15" fill="#e57000"/>
+                            <rect x="20" y="30" width="60" height="40" rx="5" fill="#ff8c42" opacity="0.3"/>
+                            <text x="50" y="62" font-size="32" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial, sans-serif">PVE</text>
+                        </svg>
+                        <h3>Proxmox</h3>
+                    </div>
+                    <p class="desc">Virtualisation et gestion d'infrastructures avec Proxmox VE.</p>
+                    <div class="btn-group">
+                        <a href="proxmox.pdf" target="_blank" class="btn-link">📄 Documentation</a>
+                    </div>
+                </div>
+
+                <div class="project-card glass fade-in">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                        <svg width="50" height="50" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="40" fill="#2e73b8"/>
+                            <circle cx="50" cy="50" r="32" fill="#4a90d9" opacity="0.3"/>
+                            <text x="50" y="58" font-size="22" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial, sans-serif">GLPI</text>
+                        </svg>
+                        <h3>GLPI</h3>
+                    </div>
+                    <p class="desc">Gestion de parc informatique et helpdesk avec GLPI.</p>
+                    <div class="btn-group">
+                        <a href="PROJETS/clinique/documentationGLPI.pdf" target="_blank" class="btn-link">📄 Documentation</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -228,23 +294,79 @@
                     </div>
                     <a href="https://www.credly.com/badges/8481edcb-d7f3-4cea-a238-bde763a1d77f" target="_blank" class="btn-link">📄 Badge preuve</a>
                 </div>
-                
+            </div>
+
+            <h3 class="title-sub">🏆 Certifications</h3>
+            <div class="certifications-grid">
                 <div class="cert-card glass fade-in">
                     <div class="cert-header">
                         <h3>PIX - Compétences Numériques</h3>
                         <span class="cert-badge">✓ Certifié</span>
                     </div>
-                    <p class="desc">Certification nationale</p>
+                    <p class="desc">Certification nationale - Janvier 2023</p>
                     <div class="cert-preview">
                         <embed src="certification-pix-20230123.pdf" type="application/pdf" width="100%" height="400px" />
                     </div>
-                    <a href="certification-pix-20230123.pdf" target="_blank" class="btn-link">📄 Ouvrir en plein écran</a>
+                    <a href="certification-pix-20230123.pdf" target="_blank" class="btn-link">📄 Ouvrir le certificat</a>
+                </div>
+
+                <div class="cert-card glass fade-in">
+                    <div class="cert-header">
+                        <h3>PIX - Compétences Numériques</h3>
+                        <span class="cert-badge">✓ Certifié</span>
+                    </div>
+                    <p class="desc">Certification nationale - Février 2026</p>
+                    <div class="cert-preview">
+                        <embed src="certification-pix-20260209.pdf" type="application/pdf" width="100%" height="400px" />
+                    </div>
+                    <a href="certification-pix-20260209.pdf" target="_blank" class="btn-link">📄 Ouvrir le certificat</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="schema" class="full-page">
+            <h2 class="title-main">◆ Schéma Réseau</h2>
+            <div class="schema-container">
+                <a href="schema reseau plot 5.pdf" target="_blank" class="schema-link">
+                    <div class="schema-preview glass">
+                        <embed src="schema reseau plot 5.pdf" type="application/pdf" width="100%" height="600px" />
+                        <div class="schema-overlay">
+                            <span class="schema-hint">🔍 Cliquez pour agrandir</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="schema-actions">
+                    <a href="schema reseau plot 5.pdf" target="_blank" class="btn-link highlight">📄 Ouvrir en plein écran</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="stages" class="full-page">
+            <h2 class="title-main">⚙ Expériences</h2>
+            <div class="grid">
+                <div class="card glass featured fade-in">
+                    <span class="date-tag">Stage 1ère Année - 2025</span>
+                    <h3>W.G. Consulting</h3>
+                    <p class="desc">Mise en place de supervision via Zabbix, gestion de serveurs Hyper-V et déploiement de conteneurs Docker.</p>
+                    <div class="btn-group">
+                        <a href="rapport-de-stage-ayyoub-belhassen.pdf" target="_blank" class="btn-link">📄 Rapport PDF</a>
+                        <a href="docs/attestation1.pdf" target="_blank" class="btn-link">Attestation</a>
+                    </div>
+                </div>
+                <div class="card glass fade-in">
+                    <span class="date-tag">Stage 2ème Année - 2025/2026</span>
+                    <h3>Cité Maurice-Ravel</h3>
+                    <p class="desc">Administration systèmes et déploiement d'infrastructures en milieu scolaire.</p>
+                    <div class="btn-group">
+                        <a href="Rapport de Stage Ayyoub BELHASSEN.pdf" target="_blank" class="btn-link">📄 Rapport PDF</a>
+                        <a href="docs/attestation2.pdf" target="_blank" class="btn-link">Attestation</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="situation" class="full-page">
-            <h2 class="title-main">♟ Situations Professionnelles</h2>
+            <h2 class="title-main">♟ Situation professionnelle (E6)</h2>
             <div class="grid">
                 <div class="card glass fade-in">
                     <h3>Active Directory</h3>
@@ -257,8 +379,9 @@
                     <a href="2eme sit.pdf" target="_blank" class="btn-link">Situation professionnelle 2</a>
                 </div>
             </div>
-            <div class="btn-group" style="margin-top: 40px;">
-                <a href="ayyoub_synthese.ods" target="_blank" class="btn-link highlight">📊 Tableau de Synthèse E6</a>
+            <div class="btn-group" style="margin-top: 40px; justify-content: center;">
+                <a href="ayyoub_synthese.pdf" target="_blank" class="btn-link highlight">📊 Tableau de Synthèse E6 (PDF)</a>
+                <a href="ayyoub_synthese.ods" target="_blank" class="btn-link">⬇️ Télécharger en ODS</a>
             </div>
         </section>
 
@@ -266,9 +389,64 @@
             <h2 class="title-main">☼ Veille Technologique</h2>
             <p class="veille-intro">Thématique : <strong>L'IoT dans les Smart Cities</strong> - Exploration des objets connectés et de leur impact sur les infrastructures urbaines modernes.</p>
             
+            <div class="veille-methodologie glass fade-in">
+                <h3>📋 Ma méthodologie de veille — IoT & Smart Cities</h3>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 25px;">
+                    <div class="method-box">
+                        <h4>⚡ PUSH — l'info vient directement à moi</h4>
+                        <div class="method-list">
+                            <div class="method-item">
+                                <span class="method-tool">Google Alertes</span>
+                                <span class="method-desc">Mots-clés ciblés → notification dès parution</span>
+                            </div>
+                            <div class="method-item">
+                                <span class="method-tool">Newsletters</span>
+                                <span class="method-desc">Smart City Mag · IoT Industriel · Smart Cities World</span>
+                            </div>
+                            <div class="method-item">
+                                <span class="method-tool">LinkedIn</span>
+                                <span class="method-desc">Abonnement à des experts & organisations du secteur</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="method-box">
+                        <h4>🔎 PULL — je vais chercher l'info</h4>
+                        <div class="method-list">
+                            <div class="method-item">
+                                <span class="method-tool">Forums & Reddit</span>
+                                <span class="method-desc">Avis terrain, débats, retours d'expérience</span>
+                            </div>
+                            <div class="method-item">
+                                <span class="method-tool">Recherches en anglais</span>
+                                <span class="method-desc">Accès aux publications académiques & études récentes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="method-result">
+                    <strong>→ Résultat :</strong> 
+                    une veille mixte, régulière et multi-sources couvrant aussi bien l'actualité professionnelle que la recherche scientifique.
+                </div>
+            </div>
+            
+            <div class="veille-controls">
+                <button class="refresh-btn" id="refreshArticles" title="Mettre à jour les articles">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+                    </svg>
+                </button>
+                <span class="last-update" id="lastUpdate">Dernière mise à jour : Mars 2026</span>
+            </div>
+            
             <div class="veille-grid">
                 <article class="veille-card glass fade-in">
-                    <div class="veille-source">Orange IoT Journey</div>
+                    <div class="veille-header">
+                        <div class="veille-source">Orange IoT Journey</div>
+                        <span class="veille-date">Mars 2026</span>
+                    </div>
                     <h3>Les solutions IoT dans la Smart City</h3>
                     <p class="veille-excerpt">
                         Découvrez comment l'IoT révolutionne les villes intelligentes. Les objets connectés permettent d'optimiser la gestion urbaine, 
@@ -285,7 +463,10 @@
                 </article>
 
                 <article class="veille-card glass fade-in">
-                    <div class="veille-source">Matooma</div>
+                    <div class="veille-header">
+                        <div class="veille-source">Matooma</div>
+                        <span class="veille-date">Février 2026</span>
+                    </div>
                     <h3>Smart City : Ces objets connectés qui nous entourent</h3>
                     <p class="veille-excerpt">
                         Lampadaires intelligents, capteurs de pollution, poubelles connectées... Les objets IoT sont partout dans nos villes. 
@@ -302,7 +483,10 @@
                 </article>
 
                 <article class="veille-card glass fade-in">
-                    <div class="veille-source">Application IoT</div>
+                    <div class="veille-header">
+                        <div class="veille-source">Application IoT</div>
+                        <span class="veille-date">Janvier 2026</span>
+                    </div>
                     <h3>Fonctionnement d'une Smart City</h3>
                     <p class="veille-excerpt">
                         Comment fonctionne réellement une ville intelligente ? De la collecte de données via des capteurs IoT à leur analyse en temps réel, 
@@ -319,7 +503,10 @@
                 </article>
 
                 <article class="veille-card glass fade-in">
-                    <div class="veille-source">Application IoT</div>
+                    <div class="veille-header">
+                        <div class="veille-source">Application IoT</div>
+                        <span class="veille-date">Décembre 2025</span>
+                    </div>
                     <h3>Villes intelligentes : Actualités technologiques</h3>
                     <p class="veille-excerpt">
                         Restez informé des dernières innovations IoT pour les Smart Cities. Nouvelles solutions de mobilité, 
@@ -336,7 +523,10 @@
                 </article>
 
                 <article class="veille-card glass fade-in">
-                    <div class="veille-source">Diehl Metering</div>
+                    <div class="veille-header">
+                        <div class="veille-source">Diehl Metering</div>
+                        <span class="veille-date">Novembre 2025</span>
+                    </div>
                     <h3>L'avenir des Smart Cities avec le Smart Metering</h3>
                     <p class="veille-excerpt">
                         Le comptage intelligent (Smart Metering) est au cœur de la transition énergétique urbaine. 
@@ -354,7 +544,10 @@
                 </article>
 
                 <article class="veille-card glass fade-in">
-                    <div class="veille-source">Hostragons</div>
+                    <div class="veille-header">
+                        <div class="veille-source">Hostragons</div>
+                        <span class="veille-date">Octobre 2025</span>
+                    </div>
                     <h3>Risques de sécurité des appareils IoT</h3>
                     <p class="veille-excerpt">
                         Les objets connectés présentent aussi des vulnérabilités. Attaques DDoS, piratage de données, accès non autorisés... 
@@ -372,25 +565,31 @@
             </div>
 
             <div class="veille-footer">
-                <a href="veille_securite-des-systemes-iot-.pdf" target="_blank" class="btn-link highlight">
-                    📄 Télécharger mon dossier de veille complet (PDF)
+                <a href="IoT_SmartCities_2025_2026_clean.pdf" target="_blank" class="btn-link highlight">
+                    🔒 Veille IoT & Smart Cities (PDF)
+                </a>
+                <a href="veille_securite-des-systemes-iot-.pdf" target="_blank" class="btn-link">
+                    📄 Consulter mon dossier de veille complet (PDF)
                 </a>
             </div>
         </section>
 
         <section id="contact" class="full-page">
             <h2 class="title-main">✉ Contact</h2>
-            <div class="contact-form glass fade-in">
-                <p class="contact-info">
-                    📧 ayyoubbelhassen05@gmail.com<br>
-                </p>
-                <form class="form-inputs" id="contactForm">
-                    <input type="text" id="name" placeholder="Votre nom" required>
-                    <input type="email" id="email" placeholder="Votre email" required>
-                    <textarea id="message" rows="4" placeholder="Votre message" required></textarea>
-                    <button type="submit" class="btn-link highlight">Envoyer le message</button>
-                </form>
-                <div id="formFeedback" class="form-feedback"></div>
+            
+            <div class="contact-links glass fade-in">
+                <a href="https://www.linkedin.com/in/ayyoub-belhassen-7a0010254" target="_blank" class="contact-link linkedin">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ayyoubbelhassen05@gmail.com&su=Contact depuis portfolio" target="_blank" class="contact-link gmail">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.545L12 16.636l-6.545-5.091v9.457H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.727l6.545-5.086 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                    </svg>
+                    <span>ayyoubbelhassen05@gmail.com</span>
+                </a>
             </div>
         </section>
     </main>
